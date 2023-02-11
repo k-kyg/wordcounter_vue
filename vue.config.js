@@ -4,6 +4,6 @@
  * @type {import('@vue/cli-service').ProjectOptions}
  */
 module.exports = {
-  publicPath: "./",
+  publicPath: "/wordcounter_vue",
   outputDir: "docs",
 };
