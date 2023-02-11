@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkwordcounter_vue"]=self["webpackChunkwordcounter_vue"]||[]).push([[443],{242:function(n,u,e){e.r(u),e.d(u,{default:function(){return f}});var r=e(252);const t={class:"about"},a=(0,r._)("h1",null,"This is an about page",-1),c=[a];function o(n,u){return(0,r.wg)(),(0,r.iD)("div",t,c)}var s=e(744);const i={},d=(0,s.Z)(i,[["render",o]]);var f=d}}]);
+//# sourceMappingURL=about.7f1cbe47.js.map
