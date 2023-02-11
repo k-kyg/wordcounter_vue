@@ -2,20 +2,22 @@
   <div class="counter">
     <textarea name="text" id="text" @input="count"></textarea>
     <p>
-      文字数: <span id="show_the_number_of_chars">{{ char_count }}</span>
+      文字数: <span id="showCharCount">{{ charCount }}</span>
     </p>
-    <p>行数: <span id="show_the_number_of_rows">0</span></p>
+    <p>
+      行数: <span id="showLineCount">{{ lineCount }}</span>
+    </p>
   </div>
 </template>
 <script lang="ts" setup>
 import { ref } from "vue";
-let char_count = ref(0);
+const charCount = ref(0);
+const lineCount = ref(1);
 
 const count = () => {
   const text = document.getElementById("text") as HTMLTextAreaElement;
-  char_count.value = [...text.value].length;
-  document.getElementById("show_the_number_of_chars")?.textContent !=
-    char_count.value.toString();
+  charCount.value = [...text.value].length;
+  lineCount.value = text.value.split(/\r\n|\n|\r/).length;
 };
 </script>
 <style lang="scss">
